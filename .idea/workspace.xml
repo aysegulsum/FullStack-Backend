@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80f2baea-a476-4004-be2a-2cf9ccb47a66" name="Changes" comment="Category and todo relationships added">
+    <list default="true" id="80f2baea-a476-4004-be2a-2cf9ccb47a66" name="Changes" comment="modify">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/api/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/api/controller/ToDoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/controller/ToDoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/api/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/api/data/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/data/CategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/api/data/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/data/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/api/entity/CategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/entity/CategoryEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/api/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/api/service/ToDoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/ToDoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/api/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/backend/api/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/backend/api/controller/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/backend/api/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/backend/api/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/backend/api/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/backend/api/service/UserService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +131,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723192581079</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Category and todo relationships added">
+      <option name="closed" value="true" />
+      <created>1723196202793</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1723196202793</updated>
+    </task>
+    <task id="LOCAL-00007" summary="modify">
+      <option name="closed" value="true" />
+      <created>1723196234373</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1723196234373</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,6 +192,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="New version" />
     <MESSAGE value="Category and todo relationships added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Category and todo relationships added" />
+    <MESSAGE value="modify" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify" />
   </component>
 </project>

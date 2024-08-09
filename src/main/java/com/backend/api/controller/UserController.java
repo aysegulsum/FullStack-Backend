@@ -64,7 +64,7 @@ public class UserController {
                 return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Password is not correct");
             }
         } else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No such user exists");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(myService.userExist(username).getMessage().toString());
         }
     }
 

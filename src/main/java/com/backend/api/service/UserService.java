@@ -13,6 +13,10 @@ public class UserService {
 
     private UserRepository userRepository;
 
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
     public OperationResult userExist(String username) {
         try {
             UserEntity user = userRepository.findByUsername(username);
