@@ -1,9 +1,52 @@
 package com.backend.api.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.backend.api.entity.CategoryEntity;
+import com.backend.api.entity.ToDoEntity;
+import com.backend.api.service.CategoryService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @RequestMapping("/category")
 public class CategoryController {
+
+    private CategoryService categoryService;
+
+    public CategoryController(CategoryService categoryService) {
+        this.categoryService = categoryService;
+    }
+
+    @PostMapping("/add")
+    public ResponseEntity<String> add(@RequestParam String name) {
+
+        CategoryEntity category = new CategoryEntity(name);
+
+        if (categoryService.add(category)) {
+            return ResponseEntity.ok("Category added successfully.");
+        } else {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Category could not added!");
+        }
+    }
+
+
+    @GetMapping("/getcategories")
+    public List<CategoryEntity> getAllEntities() {
+        return categoryService.getAllData();
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<String> deleteTodo(@PathVariable long id) {
+
+        if (categoryService.delete(id)) {
+            return ResponseEntity.ok("Delete successful");
+        } else {
+
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Category could not be deleted!");
+        }
+    }
+
 }

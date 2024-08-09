@@ -19,6 +19,10 @@ public class UserController {
     @Autowired
     private UserService myService;
 
+    public UserController(UserService myService) {
+        this.myService = myService;
+    }
+
     @GetMapping("/test")
     public String testDatabaseConnection() {
         try {

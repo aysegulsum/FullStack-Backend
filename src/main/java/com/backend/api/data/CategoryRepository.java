@@ -13,4 +13,5 @@ public interface CategoryRepository extends JpaRepository<CategoryEntity, Long> 
     @EntityGraph(attributePaths = "todos")
     List<CategoryEntity> findAll();
     CategoryEntity findById(int id);
+    CategoryEntity save(CategoryEntity categoryEntity);
 }

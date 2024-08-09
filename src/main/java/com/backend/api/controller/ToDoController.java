@@ -15,13 +15,11 @@ import java.util.Map;
 @RequestMapping("/ToDo")
 public class ToDoController {
 
-    private final ToDoService myService;
-    private final CategoryService categoryService;
+    private  ToDoService myService;
+    private  CategoryService categoryService;
 
-    //@Autowired
     public ToDoController(ToDoService myService, CategoryService categoryService) {
         this.myService = myService;
-
         this.categoryService = categoryService;
     }
 
@@ -51,7 +49,7 @@ public class ToDoController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<String> deleteTodo(@PathVariable long id) {//, @RequestBody Map<String, String> request){
+    public ResponseEntity<String> deleteTodo(@PathVariable long id) {
 
         if (myService.delete(id)) {
             return ResponseEntity.ok("Delete successful");

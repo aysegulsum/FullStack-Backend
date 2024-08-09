@@ -46,6 +46,13 @@ public class CategoryEntity {
     }
 
     public boolean isCompleted() {
+
+        for (ToDoEntity todo : this.getTodos()) {
+            if (!todo.isCompleted()) {
+                this.setCompleted(false);
+                break;
+            }
+        }
         return isCompleted;
     }
 

@@ -6,16 +6,12 @@ package com.backend.api.service;
         import com.backend.api.entity.UserEntity;
         import com.backend.api.data.UserRepository;
         import com.backend.api.response.OperationResult;
+        import org.springframework.stereotype.Service;
 
-@org.springframework.stereotype.Service
+@Service
 public class UserService {
 
-    final private UserRepository userRepository;
-
-    //@Autowired
-    public UserService(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
+    private UserRepository userRepository;
 
     public OperationResult userExist(String username) {
         try {
@@ -64,18 +60,6 @@ public class UserService {
             return Collections.emptyList();
         }
     }
-
-    //extra
-    public String getemail(String username) {
-        try {
-            UserEntity user = userRepository.findByUsername(username);
-            return user.getEmail();
-        } catch (Exception e) {
-            return "could not be taken";
-        }
-
-    }
-
     public boolean updateUserName(String name, String newName) {
 
         try {

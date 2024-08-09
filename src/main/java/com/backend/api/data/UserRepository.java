@@ -8,4 +8,5 @@ package com.backend.api.data;
 @Repository
 public interface UserRepository extends JpaRepository<UserEntity, Long> {
     UserEntity findByUsername(String username);
+    UserEntity save(UserEntity userEntity);
 }
